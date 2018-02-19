@@ -1,0 +1,134 @@
+/* Animation for all the buttons */
+.hvr-grow
+{
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active
+{
+    transform: scale(1.1);
+}
+
+/* Design for the body */
+body
+{
+  background: #21303b;
+  color: #000;
+}
+
+/* Design for the h1 */
+h1
+{
+  text-align: center;
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  font: 80px 'BazarMedium';
+  margin-bottom: -20px;
+}
+
+/* Design for the h2 */
+h2
+{
+  text-align: center;
+  color: #d7ceb2;
+	text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+	font: 50px 'BazarMedium';
+  letter-spacing: 0px;
+}
+
+/* Design for all of the paragraphs */
+p
+{
+  text-align: center;
+  color: #d7ceb2;
+  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+  font: 60px 'BazarMedium';
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Design for the first button */
+#button1
+{
+  outline: 2px dashed black;
+  outline-offset: -5px;
+  max-width: 500px;
+  left: 5%;
+  top: 35%;
+  position: absolute;
+}
+
+/* Design for the second button */
+#button2
+{
+  max-width: 500px;
+  left: 34%;
+  top: 35%;
+  position: absolute;
+  outline: 2px dashed black;
+  outline-offset: -5px;
+}
+
+/* Design for the third button */
+#button3
+{
+  max-width: 500px;
+  left: 65%;
+  top: 35%;
+  position: absolute;
+  outline: 2px dashed black;
+  outline-offset: -5px;
+}
+
+/* Positioning and design for the text under the first button */
+#para1
+{
+  max-width: 500px;
+  left: 7%;
+  top: 65%;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+}
+
+/* Positioning and design for the text under the second button */
+#para2
+{
+  max-width: 500px;
+  left: 39%;
+  top: 65%;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+}
+
+/* Positioning and design for the text under the third button */
+#para3
+{
+  max-width: 500px;
+  left: 69%;
+  top: 65%;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+}
+
+/* Design and positioning for the footer of the page */
+footer
+{
+  padding: 1em;
+  color: white;
+  background-color: black;
+  clear: left;
+  text-align: center;
+  bottom: 0px;
+  position: fixed;
+}

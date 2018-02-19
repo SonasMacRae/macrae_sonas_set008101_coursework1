@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!-- Author: Sonas MacRae
+     Date last modified: Friday 16th February 2018
+     The purpose of this class is to hold the html code for the
+     number cipher page -->
+
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Number Cipher</title>
+
+  </head>
+  <body>
+
+    <script src="numberCipher.js"></script>
+
+    <a href="index.html"><button id="button1" class="hvr-grow">Home Page</button></a>
+
+    <h1><u>Number Cipher</u></h1>
+    <h3><u>-529317148756024527241814397844122654952630-</u></h3>
+
+    <div class="wrapper">
+      <div>
+
+        <h2>Crunch some numbers</h2>
+
+        <input id = "input" type = "text" size = "20" placeholder="Input text">
+        <input id = "output" type = "text" size = "20" placeholder="Output text">
+        <button onclick = "encrypt()" class="hvr-grow"> Encrypt </button>
+        <button onclick = "decrypt()" class="hvr-grow"> Decrypt </button>
+        <button onclick="copyFunction()" class="hvr-grow">Copy output</button>
+
+      </div>
+      <div>
+
+        To use this brilliant cipher, type text into the box that has "Input text"
+        written in it and press the button labelled "Encrypt". This cipher works in
+        such a way that you can keep pressing the "Encrypt" button to jumble up the
+        output, but every jumbled up output can be deciphered back to the same original
+        text every time. The only explanation is witchcraft.
+
+        <br><br>
+
+        <iframe width="225" height="270" src="https://www.youtube.com/embed/N-bMxnjiqjg"></iframe>
+        <iframe width="225" height="270" src="https://www.youtube.com/embed/-yFZGF8FHSg"></iframe>
+        <iframe width="225" height="270" src="https://www.youtube.com/embed/xsMMp0urF_w"></iframe>
+
+      </div>
+      <div>
+
+        <h2>This cipher doesn't have a real name</h2>
+        This is a cipher that I thought of myself, I got the idea from
+        the image displayed at the bottom right of this page. This is a simple substitution
+        cipher where every letter in the English alphabet can be substituted with one of 4
+        double digit numbers, apart from the letters 'wxyz' which can only be one of 3
+        double digit numbers. Encryption is very simple, for every letter inputted, choose
+        one of the possible outputs. To decipher the encryption all you need to know is which
+        numbers correspond to which letters in the alphabet.
+
+        <br>
+
+        To program this cipher I came up with an algorithm which uses a random number generator
+        and simple maths to encrypt a message, and straight forward maths to decrypt a given
+        encrypted message back to English.
+       <a href="http://sites.millersville.edu/bikenaga/number-theory/character-and-block-ciphers/character-and-block-ciphers.html">
+         Click this link for more information about number ciphers</a>
+
+      </div>
+      <div>
+
+        <img src = "wheel.png">
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- Author: Sonas MacRae
+     Date last modified: Tuesday 20th February 2018
+     The purpose of this class is to hold the html code for the
+     home page -->
+
+<html>
+  <head>
+
+    <link rel="stylesheet" href="indexStyle.css">
+
+    <title>Ciphers homepage</title>
+
+  </head>
+  <body>
+
+    <a href="caesar.html"><button id="button1" class="hvr-grow"></button></a>
+    <a href="numberCipher.html"><button id="button2" class="hvr-grow"></button></a>
+    <a href="vigenere.html"><button id="button3" class="hvr-grow"></button></a>
+
+    <script type="text/javascript">
+
+      var buttons = document.getElementById("button1");
+      buttons.innerHTML = '<img src="caesar.jpg" style="width:35em; height:30em;"/>';
+      buttons = document.getElementById("button2");
+      buttons.innerHTML = '<img src="test3.png" style="width:40em; height:30em;"/>';
+      buttons = document.getElementById("button3");
+      buttons.innerHTML = '<img src="vigenere.jpg" style="width:35em; height:30em;"/>';
+
+    </script>
+
+    <h1><u>Which cipher would you like to use?</u></h1>
+    <h2>(<u>This is the home page</u>)</h2>
+
+    <p id="para1">Caesar cipher</p>
+    <p id="para2">Number cipher</p>
+    <p id="para3">vigenere cipher</p>
+
+    <footer>Sonas MacRae 40277542</footer>
+
+  </body>
+</html>

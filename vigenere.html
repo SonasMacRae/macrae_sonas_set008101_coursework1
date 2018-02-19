@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!-- Author: Sonas MacRae
+     Date last modified: Friday 16th February 2018
+     The purpose of this class is to hold the html code for the
+     Vigenere cipher page -->
+
+<html>
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Vigenere Cipher</title>
+
+</head>
+  <body>
+
+    <script src="vigenere.js"></script>
+
+    <a href="index.html"><button id="button1" class="hvr-grow">Home Page</button></a>
+
+    <h1><u>Vigenere Cipher</u></h1>
+    <h3><u>-A project by Sonas MacRae-</u></h3>
+
+    <div class="wrapper">
+      <div>
+
+        <h2>Encrypt your message</h2>
+
+        <input id = "keyword" type = "text" size = "20" placeholder="Keyword">
+        <input id = "input" type = "text" size = "20" placeholder="Input text">
+        <input id = "output" type = "text" size = "20" placeholder="Output text">
+
+        <button onclick = "encrypt()" class="hvr-grow">Encrypt</button>
+        <button onclick = "decrypt()" class="hvr-grow">Decrypt</button>
+        <button onclick="copyFunction()" class="hvr-grow">Copy output</button>
+
+      </div>
+      <div>
+
+        To use this cipher, enter some text into the "input" box and enter a keyword into the
+        input box labelled "keyword", once you are satisfied with your choice of inputs go ahead and <s>smack</s>
+        press the "encryption" button.. Your encrypted message should appear in the output box, press the
+        "Copy output" button to save your secret message to your clipboard.
+
+        <br>
+
+        To decipher a message enter text into the input area and hit the button labelled "Decrypt".
+
+        <br><br>
+
+        <iframe width="225" height="270" src="https://www.youtube.com/embed/P4z3jAOzT9I"></iframe>
+        <iframe width="225" height="270" src="https://www.youtube.com/embed/0mhVKAkU4BQ"></iframe>
+        <iframe width="225" height="270" src="https://www.youtube.com/embed/G2_Q9FoD-oQ"></iframe>
+
+      </div>
+      <div>
+
+        <h2>I want to know more</h2>
+
+        What is today known as the Vigenère Cipher was actually first described by Giovan Battista
+        Bellaso in his 1553 book La cifra del. Sig. Giovan Battista Bellaso. However, in the 19th
+        Century, it was misattributed to Blaise de Vigenère, who had presented a similar cipher
+
+        <a href="http://crypto.interactive-maths.com/autokey-cipher.html">
+          (The Auto Key cipher)</a> in 1586.
+
+        At the time, and for many centuries since its invention, the Vigenère Cipher was renowned
+        for being a very secure cipher, and for a very long time it was believed to be unbreakable.
+        It was this thought that earned it the nickname "le chiffre indéchiffrable" (French for "the
+        unbreakable cipher"). Although this is not true (it was fully broken by Friedrich Kasiski in 1863),
+        it is still a very secure cipher in terms of paper and pen methods, and is usable as a field cipher.
+
+       <a href="https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjXxtrR8a7ZAhWFSsAKHZDPBR4QFggpMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVigen%25C3%25A8re_cipher&usg=AOvVaw1JZTHqoenW5aSGS08-eTGE">
+         More about the vigenere cipher</a>
+
+      </div>
+      <div>
+
+        <img src = "vigenerephoto.jpg">
+
+      </div>
+    </div>
+  </body>
+</html>
