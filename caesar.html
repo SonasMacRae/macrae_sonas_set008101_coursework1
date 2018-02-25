@@ -55,12 +55,13 @@
         <option value="z">Z</option>
       </select>
 
-      <input id = "input" type = "text" placeholder="Input text">
-      <input id = "output" type = "text" size = "20" placeholder="Output text">
+      <input id = "input" type = "text" placeholder="Input text" spellcheck="false">
 
       <button onclick = "encrypt()" class="hvr-grow">Encrypt</button>
       <button onclick = "decrypt()" class="hvr-grow">Decrypt</button>
       <button onclick="copyFunction()" class="hvr-grow">Copy output</button>
+
+      <input id = "output" type = "text" size = "20" placeholder="Output text" spellcheck="false">
 
     </div>
     <div>
@@ -70,16 +71,17 @@
       too. To use this cipher, type into the box labelled "Plain text" and use the
       drop down menu to choose your key to encrypt with, ('A' shifting the letters by
       0 places and 'Z' shifting the letters by 25 places) press the button that says
-      "Encrypt", the encrypted message should appear. Now that you have your secret
+      "Encrypt", the encrypted message should appear. All encrypted messages have spaces
+      removed. Now that you have your secret
       message you can press the button labelled "copy" which will copy the encrypted
       text to your clipboard and can then be pasted back into the input box for decryption.
       To decrypt a message back to its original state, press the button labelled "Decrypt".
 
       <br><br>
 
-      <iframe width="225" height="270" src="https://www.youtube.com/embed/sMOZf4GN3oc"></iframe>
-      <iframe width="225" height="270" src="https://www.youtube.com/embed/o6TPx1Co_wg"></iframe>
-      <iframe width="225" height="270" src="https://www.youtube.com/embed/ZYUOnllJ2UI"></iframe>
+      <iframe width="235" height="270" src="https://www.youtube.com/embed/sMOZf4GN3oc"></iframe>
+      <iframe width="235" height="270" src="https://www.youtube.com/embed/o6TPx1Co_wg"></iframe>
+      <iframe width="235" height="270" src="https://www.youtube.com/embed/ZYUOnllJ2UI"></iframe>
 
     </div>
     <div>
@@ -92,13 +94,13 @@
       each letter in the plaintext is replaced by a letter some fixed number
       of positions down the alphabet. For example, with a left shift of 3, D would
       be replaced by A, E would become B, and so on. The method is named after
-      Julius Caesar, who used it in his private correspondence.[1]
+      Julius Caesar, who used it in his private correspondence.
       The encryption step performed by a Caesar cipher is often incorporated as
-      part of more complex schemes, such as the Vigenère cipher, and still has
+      part of more complex schemes, such as the Vigenere cipher, and still has
       modern application in the ROT13 system. As with all single-alphabet substitution
      ciphers, the Caesar cipher is easily broken and in modern practice offers
      essentially no communication security.
-     <a href="https://en.wikipedia.org/wiki/Caesar_cipher">Click this link for more information on the caesar cipher</a>
+     <a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank">Click this link for more information on the caesar cipher</a>
 
     </div>
     <div>
