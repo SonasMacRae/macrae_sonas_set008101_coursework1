@@ -38,7 +38,7 @@ body
 /* Used to design all of the buttons */
 button
 {
-  background: #ddd;
+  background: white;
   border: 2px solid;
   border-bottom-width: 4px;
   font: inherit;
@@ -49,12 +49,19 @@ button
   transition: color 1s;
 }
 
+/* design for all the embedded vidoes */
+iframe
+{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
 /* Design for all the images */
 img
 {
-  height: 600px;
-  width: 600px;
-  padding-left: 100px;
+  height: 700px;
+  width: 700px;
+  margin-left: 50px;
 }
 
 /* Design for all the h1's */
@@ -92,10 +99,19 @@ h3
 /* Design for the dropdown menu for the Caesar cipher*/
 select
 {
-  margin-right: 600px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+ /* design for the label for the dropdown menu */
+label
+{
+  margin-left: 30px;
+  font: 30px 'BazarMedium';
 }
 
 /* Design for the keyword input box for the Vigenere cipher */
@@ -104,7 +120,8 @@ select
   size: 10px;
   height: 20px;
   width: 200px;
-  margin-right: 600px;
+  margin-left: 20px;
+  margin-bottom: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
@@ -113,15 +130,15 @@ select
 /* Design for the input boxes for the ciphers */
 #input
 {
-  wrap: hard;
-  font-size: 15px;
+  font-size: 20px;
   background: #ddd;
   right: 30%;
   text-align: left;
-  padding:  0.4em;
-  width: 365px;
-  height: 10px;
-  padding-bottom:150px;
+  margin-left: 20px;
+  padding:  0.6em;
+  width: 90%;
+  height: 15px;
+  padding-bottom: 150px;
   border-style: solid;
   border-width: 2px;
   border-color: black;
@@ -130,14 +147,16 @@ select
 /* Design for the output boxes for the ciphers */
 #output
 {
-  font-size: 15px;
+  font-size: 20px;
   background: #ddd;
   right: 30%;
   text-align: left;
-  padding:  0.4em;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  padding:  0.6em;
+  width: 90%;
+  height: 15px;
   padding-bottom:150px;
-  width: 365px;
-  height: 10px;
   border-style: solid;
   border-width: 2px;
   border-color: black;
@@ -159,7 +178,6 @@ select
   outline-offset: -5px;
 
   color: black;
-  font-weight: bold;
   position: relative;
   background-color: #ddd;
   padding-left: 1em;
