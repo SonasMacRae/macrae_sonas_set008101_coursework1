@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- Author: Sonas MacRae
+     Date last modified: Friday 16th February 2018
+     The purpose of this class is to hold the html code for the
+     number cipher page -->
+
+<html>
+  <head>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Fractioned Morse Cipher</title>
+
+  </head>
+  <body>
+
+    <script src="FractionedMorseCipher.js"></script>
+
+    <a href="index.html"><button id="button1" class="hvr-grow">Home Page</button></a>
+
+    <h1><u>Fractioned Morse Cipher</u></h1>
+    <h3><u>-A project by Sonas MacRae-</u></h3>
+
+    <div class="wrapper">
+      <div>
+
+        <h2>Let's change some text into other text</h2>
+
+        <input id = "keyword" type = "text" size = "20" placeholder="Keyword" spellcheck="false">
+        <input id = "input" type = "text" size = "20" placeholder="Input text" spellcheck="false">
+
+        <button onclick = "encrypt()" class="hvr-grow"> Encrypt </button>
+        <button onclick = "decrypt()" class="hvr-grow"> Decrypt </button>
+        <button onclick="copyFunction()" class="hvr-grow">Copy output</button>
+
+
+        <input id = "output" type = "text" size = "20" placeholder="Output text" spellcheck="false">
+
+      </div>
+      <div>
+
+        This cipher is a lot more complex than the others on this site, text goes through
+        several layers of encryption making the output a lot less predictable, the output
+        changes based on the keyword as well as the possibility of the output being longer
+        than the input, this cipher is very difficult to decipher by hand without knowing
+        the keyword.
+
+        <br>
+
+        Try this cipher out, type your message into the input box and press the button labelled
+        "Encrypt", and just like magic the output appears. To decrypt your now-secret message back
+        to its original state, insert your text into the input box yet again, but this time press
+        the button labelled "decrypt". This page also supports copy and paste, although it has limited
+        functionality, you can copy your output to your clipboard using the "Copy output" button.
+
+        <br><br>
+
+        <iframe width="235" height="270" src="https://www.youtube.com/embed/JJtJve1Aqu8"></iframe>
+        <iframe width="235" height="270" src="https://www.youtube.com/embed/bNoOYeS0gs0"></iframe>
+        <iframe width="235" height="270" src="https://www.youtube.com/embed/RtUvMJFP_IE"></iframe>
+
+      </div>
+      <div>
+
+        <h2>More information</h2>
+
+        The Fractionated Morse cipher first converts the plaintext to morse code, then enciphers
+        fixed size blocks of morse code back to letters. This procedure means plaintext letters
+        are mixed into the ciphertext letters i.e. one plaintext letter does not map to one
+        ciphertext letter. This makes it more secure than e.g. substitution ciphers, but it
+        can still be broken with some effort.
+
+        <br>
+
+        One of the benefits of the Fractioned Morse cipher is that it can encipher spaces and
+        punctuation just as easily as letters. The ciphertext message will generally be of a
+        similar length to the plaintext message, but often will have a slightly different number
+        of characters.
+
+        <br>
+
+        Morse code is a method of transmitting text information as a series of on-off tones,
+        lights, or clicks that can be directly understood by a skilled listener or observer without
+        special equipment. It is named for Samuel F. B. Morse, an inventor of the telegraph.
+
+      </div>
+      <div>
+
+        <img src = "morsecode.jpg">
+
+      </div>
+    </div>
+  </body>
+</html>
