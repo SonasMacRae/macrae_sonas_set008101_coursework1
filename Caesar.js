@@ -61,6 +61,12 @@ function encrypt()
 
   for (var i = 0; i < userInput.length; i++)
   {
+    if (userInput[i] == " ")
+    {
+      finalword += " ";
+      continue;
+    }
+
     for (var j = 0; j < alphabet.length; j++)
     {
       if(userInput[i] == alphabet[j])
@@ -89,6 +95,12 @@ function decrypt()
 
   for (var i = 0; i < userInput.length; i++)
   {
+    if (userInput[i] == " ")
+    {
+      finalword += " ";
+      continue;
+    }
+
     for (var j = 0; j < alphabet.length; j++)
     {
       if(userInput[i] == alphabet[j])
