@@ -85,7 +85,7 @@ function decrypt()
   {
     // Takes 2 integers at a time and turns them into strings
     userInput[i].toString();
-    userInput[i+1].toString();
+    userInput[i + 1].toString();
 
     // Checks if the next 2 values aren't whitespace
     if (userInput[i + 1] != " ")
