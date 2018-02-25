@@ -58,9 +58,9 @@ p
 /* Design for the first button */
 #button1
 {
+  width: 350px;
   outline: 2px dashed black;
   outline-offset: -5px;
-  max-width: 500px;
   left: 5%;
   top: 35%;
   position: absolute;
@@ -69,8 +69,8 @@ p
 /* Design for the second button */
 #button2
 {
-  max-width: 500px;
-  left: 34%;
+  max-width: 350px;
+  left: 28%;
   top: 35%;
   position: absolute;
   outline: 2px dashed black;
@@ -80,8 +80,18 @@ p
 /* Design for the third button */
 #button3
 {
-  max-width: 500px;
-  left: 65%;
+  max-width: 350px;
+  left: 51%;
+  top: 35%;
+  position: absolute;
+  outline: 2px dashed black;
+  outline-offset: -5px;
+}
+
+#button4
+{
+  max-width: 350px;
+  left: 74%;
   top: 35%;
   position: absolute;
   outline: 2px dashed black;
@@ -89,21 +99,21 @@ p
 }
 
 /* Positioning and design for the text under the first button */
-#para1
+.para1
 {
   max-width: 500px;
   left: 7%;
   top: 65%;
   position: absolute;
   font-size: 50px;
-  color: white;
+  color: #F5FFFA;
 }
 
 /* Positioning and design for the text under the second button */
 #para2
 {
   max-width: 500px;
-  left: 39%;
+  left: 29%;
   top: 65%;
   position: absolute;
   font-size: 50px;
@@ -114,7 +124,17 @@ p
 #para3
 {
   max-width: 500px;
-  left: 69%;
+  left: 52%;
+  top: 65%;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+}
+
+#para4
+{
+  max-width: 500px;
+  left: 74%;
   top: 65%;
   position: absolute;
   font-size: 50px;
