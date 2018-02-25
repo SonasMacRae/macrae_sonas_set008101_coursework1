@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- Author: Sonas MacRae
+     Date last modified: Sunday 25th February 2018
+     The purpose of this class is to show all the design
+     methods used in the website -->
+
+<html>
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Vigenere Cipher</title>
+
+</head>
+  <body>
+
+    <script src="vigenere.js"></script>
+
+    <a href="index.html"><button id="button1" class="hvr-grow">this is the home button</button></a>
+    <p>home button design = background: white; border: 2px solid;
+    border-bottom-width: 4px;
+    font: inherit;
+
+    <h1><u>This is a h1</u></h1>
+    <p> the design for h1 = color: #d7ceb2; text-shadow:
+      3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+      h1 and h3 have the same style, both are underlined </p>
+
+    <div class="wrapper">
+      <div>
+
+        <h2>This is the h2 - color: #d7ceb2; font:'BazarMedium';</h2>
+
+        <input id = "keyword" type = "text" size = "20" placeholder="Keyword" spellcheck="false">
+        The design for the keyword input box:
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        width: 50px;
+        height: 30px;
+        font-size: 15px;
+        margin-bottom: 5px;
+        <input id = "input" type = "text" size = "20" placeholder="Input text" spellcheck="false">
+
+        <button onclick = "encrypt()" class="hvr-grow">Encrypt</button>
+        <button onclick = "decrypt()" class="hvr-grow">Decrypt</button>
+        <button onclick="copyFunction()" class="hvr-grow">Copy output</button>
+        <br>
+        The design for the buttons are: background: white;
+        border: 2px solid;
+        border-bottom-width: 4px;
+        font: inherit;
+        letter-spacing: inherit;
+        margin: 1em;
+        padding: 1em 2.5em;
+        text-transform: inherit;
+        transition: color 1s;
+
+        <input id = "output" type = "text" size = "20" placeholder="Output text" spellcheck="false">
+        output and input box design = font-size: 20px;
+        background: #ddd;
+        right: 30%;
+        text-align: left;
+        margin-left: 20px;
+        padding:  0.6em;
+        width: 90%;
+        height: 15px;
+        padding-bottom: 150px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+      </div>
+      <div>
+
+        Every second box has the background colour #ddd <br>
+        and the colour of the text is black <br>
+        all paragraphs have the following font: Verdana
+        <br><br>
+        images have the following design: height: 700px;
+        width: 700px;
+        margin-left: 50px;
+
+
+
+
+      </div>
+      <div>
+        every odd box have the following style:<br>
+        outline: 1.5px dashed #98abb9;
+        background-color: #556068;
+        color: white;
+      </div>
+    </div>
+  </body>
+</html>
