@@ -1,6 +1,6 @@
 /*
   Author: Sonas MacRae
-  Date last modified: Monday 19th February 2018
+  Date last modified: Sunday 25th February 2018
 
   The purpose of this class is to hold all the javascript code for the Vigenere cipher
 */
@@ -30,8 +30,6 @@ function formatInput()
   {
     alert("Please enter an input to encrypt")
   }
-
-  input = input.replace(' ', '');
 
   return input;
 }
@@ -86,6 +84,12 @@ function encrypt()
   // Loop through every char in the input string
   for (var i = 0; i < userInput.length; i++)
   {
+    if (userInput[i] == " ")
+    {
+      finalword += " ";
+      continue;
+    }
+
     // Loop char through alphabet array looking for a match, save the index
     for (var j = 0; j < alphabet.length; j++)
     {
@@ -126,14 +130,29 @@ function decrypt()
   }
 
   finalword = "";
+
+
+
+  // This variable will be used to keep track of the index of the
+  // keyword-values array
   keywordIndex = 0;
 
+  // Loop through every char in the input string
   for (var i = 0; i < userInput.length; i++)
   {
+    if (userInput[i] == " ")
+    {
+      finalword += " ";
+      continue;
+    }
+
+    // Loop char through alphabet array looking for a match, save the index
     for (var j = 0; j < alphabet.length; j++)
     {
       if(userInput[i] == alphabet[j])
       {
+        // Create a new index by combining the value of the current key
+        // letter with the input letter
         newIndex = j - keywordValues[keywordIndex];
         if (newIndex < 0)
         {
@@ -143,16 +162,14 @@ function decrypt()
         finalword += alphabet[newIndex];
         keywordIndex++;
 
+        // If the end of the keyword-values array is met, reduce the index back to zero
         if (keywordIndex == keywordValues.length)
         {
           keywordIndex = 0;
         }
       }
-      else
-      {
-        finalword += userInput[i];
-      }
     }
   }
-  document.getElementById("demo").innerHTML = finalword;
+  // Output the new string to the output box on the webpage
+  document.getElementById("output").value = finalword;
 }
